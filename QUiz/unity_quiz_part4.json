@@ -1,0 +1,302 @@
+[
+  {
+    "id": 61,
+    "category": "CSharp Script",
+    "difficulty": "Easy",
+    "type": "multiple-choice",
+    "question": "Hàm nào được gọi một lần trước frame đầu tiên khi script được bật?",
+    "options": [
+      "Update()",
+      "Start()",
+      "LateUpdate()",
+      "OnGUI()"
+    ],
+    "answer": 1,
+    "explanation": "Start() chạy một lần."
+  },
+  {
+    "id": 62,
+    "category": "CSharp Script",
+    "difficulty": "Easy",
+    "type": "multiple-choice",
+    "question": "Awake() thường dùng để?",
+    "options": [
+      "Khởi tạo tham chiếu trước Start()",
+      "Xử lý Input",
+      "Vẽ UI",
+      "Tải Scene"
+    ],
+    "answer": 0,
+    "explanation": "Awake thích hợp để khởi tạo."
+  },
+  {
+    "id": 63,
+    "category": "CSharp Script",
+    "difficulty": "Easy",
+    "type": "multiple-choice",
+    "question": "Time.deltaTime giúp điều gì?",
+    "options": [
+      "Di chuyển không phụ thuộc FPS",
+      "Tăng FPS",
+      "Đổi Scene",
+      "Giảm RAM"
+    ],
+    "answer": 0,
+    "explanation": "Nhân tốc độ với deltaTime."
+  },
+  {
+    "id": 64,
+    "category": "CSharp Script",
+    "difficulty": "Easy",
+    "type": "multiple-choice",
+    "question": "Thuộc tính nào giúp biến private vẫn hiển thị trên Inspector?",
+    "options": [
+      "HideInInspector",
+      "SerializeField",
+      "Header",
+      "Tooltip"
+    ],
+    "answer": 1,
+    "explanation": "SerializeField cho phép serialize biến private."
+  },
+  {
+    "id": 65,
+    "category": "CSharp Script",
+    "difficulty": "Easy",
+    "type": "multiple-choice",
+    "question": "Lệnh nào lấy Rigidbody2D trên cùng GameObject?",
+    "options": [
+      "FindObjectOfType<Rigidbody2D>()",
+      "GetComponent<Rigidbody2D>()",
+      "GameObject.Find()",
+      "Resources.Load()"
+    ],
+    "answer": 1,
+    "explanation": "GetComponent lấy component cùng object."
+  },
+  {
+    "id": 66,
+    "category": "CSharp Script",
+    "difficulty": "Easy",
+    "type": "multiple-choice",
+    "question": "Muốn xóa GameObject khỏi Scene khi đang chạy dùng?",
+    "options": [
+      "Remove()",
+      "Delete()",
+      "Destroy()",
+      "Clear()"
+    ],
+    "answer": 2,
+    "explanation": "Destroy sẽ hủy GameObject."
+  },
+  {
+    "id": 67,
+    "category": "CSharp Script",
+    "difficulty": "Easy",
+    "type": "multiple-choice",
+    "question": "Từ khóa nào khai báo biến chỉ đọc trong Inspector nhưng công khai?",
+    "options": [
+      "private",
+      "protected",
+      "public",
+      "const"
+    ],
+    "answer": 2,
+    "explanation": "public hiển thị mặc định trên Inspector."
+  },
+  {
+    "id": 68,
+    "category": "CSharp Script",
+    "difficulty": "Easy",
+    "type": "multiple-choice",
+    "question": "Input.GetKeyDown() trả về true khi nào?",
+    "options": [
+      "Giữ phím",
+      "Nhấn phím lần đầu",
+      "Nhả phím",
+      "Luôn đúng"
+    ],
+    "answer": 1,
+    "explanation": "Chỉ frame bắt đầu nhấn."
+  },
+  {
+    "id": 69,
+    "category": "CSharp Script",
+    "difficulty": "Easy",
+    "type": "multiple-choice",
+    "question": "Input.GetKey() trả về true khi nào?",
+    "options": [
+      "Chỉ lúc nhả",
+      "Trong suốt thời gian giữ phím",
+      "Một lần",
+      "Không bao giờ"
+    ],
+    "answer": 1,
+    "explanation": "True khi đang giữ."
+  },
+  {
+    "id": 70,
+    "category": "CSharp Script",
+    "difficulty": "Easy",
+    "type": "multiple-choice",
+    "question": "Input.GetKeyUp() dùng để?",
+    "options": [
+      "Phát hiện nhả phím",
+      "Giữ phím",
+      "Bắt đầu nhấn",
+      "Di chuyển"
+    ],
+    "answer": 0,
+    "explanation": "True khi vừa nhả."
+  },
+  {
+    "id": 71,
+    "category": "CSharp Script",
+    "difficulty": "Easy",
+    "type": "multiple-choice",
+    "question": "Vector2 thường dùng trong Unity 2D để biểu diễn?",
+    "options": [
+      "Vị trí hoặc hướng (x,y)",
+      "Màu sắc",
+      "Tên object",
+      "Âm thanh"
+    ],
+    "answer": 0,
+    "explanation": "Vector2 gồm x,y."
+  },
+  {
+    "id": 72,
+    "category": "CSharp Script",
+    "difficulty": "Medium",
+    "type": "multiple-choice",
+    "question": "Mathf.Clamp(value,min,max) có tác dụng?",
+    "options": [
+      "Giới hạn giá trị trong khoảng",
+      "Làm tròn",
+      "Sinh số ngẫu nhiên",
+      "Tính căn bậc hai"
+    ],
+    "answer": 0,
+    "explanation": "Clamp giới hạn giá trị."
+  },
+  {
+    "id": 73,
+    "category": "CSharp Script",
+    "difficulty": "Medium",
+    "type": "multiple-choice",
+    "question": "Random.Range(0,5) với kiểu int có thể trả về?",
+    "options": [
+      "0 đến 5",
+      "0 đến 4",
+      "1 đến 5",
+      "1 đến 4"
+    ],
+    "answer": 1,
+    "explanation": "Giới hạn trên không bao gồm."
+  },
+  {
+    "id": 74,
+    "category": "CSharp Script",
+    "difficulty": "Medium",
+    "type": "multiple-choice",
+    "question": "Muốn trì hoãn thực thi một đoạn code mà không khóa game nên dùng?",
+    "options": [
+      "while",
+      "Thread.Sleep",
+      "Coroutine",
+      "for"
+    ],
+    "answer": 2,
+    "explanation": "Coroutine không chặn game."
+  },
+  {
+    "id": 75,
+    "category": "CSharp Script",
+    "difficulty": "Medium",
+    "type": "multiple-choice",
+    "question": "Kiểu trả về của Coroutine là?",
+    "options": [
+      "void",
+      "Task",
+      "IEnumerator",
+      "int"
+    ],
+    "answer": 2,
+    "explanation": "Coroutine sử dụng IEnumerator."
+  },
+  {
+    "id": 76,
+    "category": "CSharp Script",
+    "difficulty": "Easy",
+    "type": "multiple-choice",
+    "question": "yield return new WaitForSeconds(2f) nghĩa là?",
+    "options": [
+      "Đợi 2 giây rồi tiếp tục",
+      "Dừng game 2 giây",
+      "Tăng FPS",
+      "Hủy Coroutine"
+    ],
+    "answer": 0,
+    "explanation": "Tạm dừng Coroutine."
+  },
+  {
+    "id": 77,
+    "category": "CSharp Script",
+    "difficulty": "Easy",
+    "type": "multiple-choice",
+    "question": "Debug.Log() chủ yếu dùng để?",
+    "options": [
+      "In thông tin hỗ trợ kiểm tra chương trình",
+      "Hiển thị UI",
+      "Lưu file",
+      "Tăng tốc game"
+    ],
+    "answer": 0,
+    "explanation": "Debug.Log giúp debug."
+  },
+  {
+    "id": 78,
+    "category": "CSharp Script",
+    "difficulty": "Hard",
+    "type": "multiple-choice",
+    "question": "Nếu gọi GetComponent() liên tục trong Update(), điều gì nên cân nhắc?",
+    "options": [
+      "Nên cache kết quả để tối ưu",
+      "Không ảnh hưởng gì",
+      "Làm tăng đồ họa",
+      "Bắt buộc phải làm"
+    ],
+    "answer": 0,
+    "explanation": "Cache giúp giảm chi phí gọi."
+  },
+  {
+    "id": 79,
+    "category": "CSharp Script",
+    "difficulty": "Easy",
+    "type": "multiple-choice",
+    "question": "Biến speed = 5f; nên khai báo kiểu dữ liệu nào?",
+    "options": [
+      "int",
+      "bool",
+      "float",
+      "string"
+    ],
+    "answer": 2,
+    "explanation": "5f là số thực."
+  },
+  {
+    "id": 80,
+    "category": "CSharp Script",
+    "difficulty": "Medium",
+    "type": "multiple-choice",
+    "question": "Muốn Player di chuyển mượt với transform trong Update(), công thức phù hợp là?",
+    "options": [
+      "position += direction * speed * Time.deltaTime",
+      "position = direction",
+      "position *= speed",
+      "position++"
+    ],
+    "answer": 0,
+    "explanation": "Nhân deltaTime để độc lập FPS."
+  }
+]

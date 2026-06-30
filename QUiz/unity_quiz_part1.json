@@ -1,0 +1,302 @@
+[
+  {
+    "id": 1,
+    "category": "Unity Editor",
+    "difficulty": "Easy",
+    "type": "multiple-choice",
+    "question": "Cửa sổ nào chứa toàn bộ Asset của dự án?",
+    "options": [
+      "Hierarchy",
+      "Project",
+      "Inspector",
+      "Console"
+    ],
+    "answer": 1,
+    "explanation": "Project lưu trữ toàn bộ asset."
+  },
+  {
+    "id": 2,
+    "category": "Unity Editor",
+    "difficulty": "Easy",
+    "type": "multiple-choice",
+    "question": "Hierarchy dùng để hiển thị gì?",
+    "options": [
+      "GameObject trong Scene",
+      "Asset",
+      "Package",
+      "Script"
+    ],
+    "answer": 0,
+    "explanation": "Hierarchy liệt kê GameObject trong Scene."
+  },
+  {
+    "id": 3,
+    "category": "Unity Editor",
+    "difficulty": "Easy",
+    "type": "multiple-choice",
+    "question": "Inspector dùng để làm gì?",
+    "options": [
+      "Xem log",
+      "Chỉnh sửa Component và thuộc tính",
+      "Viết code",
+      "Build game"
+    ],
+    "answer": 1,
+    "explanation": "Inspector chỉnh sửa đối tượng được chọn."
+  },
+  {
+    "id": 4,
+    "category": "Unity Editor",
+    "difficulty": "Easy",
+    "type": "multiple-choice",
+    "question": "Console chủ yếu dùng để?",
+    "options": [
+      "Quản lý Asset",
+      "Xem log, warning và error",
+      "Tạo Animation",
+      "Thiết kế Scene"
+    ],
+    "answer": 1,
+    "explanation": "Console hiển thị thông báo và lỗi."
+  },
+  {
+    "id": 5,
+    "category": "Unity Editor",
+    "difficulty": "Easy",
+    "type": "multiple-choice",
+    "question": "Component bắt buộc trên mọi GameObject là?",
+    "options": [
+      "SpriteRenderer",
+      "Transform",
+      "Rigidbody2D",
+      "Collider2D"
+    ],
+    "answer": 1,
+    "explanation": "Mọi GameObject đều có Transform."
+  },
+  {
+    "id": 6,
+    "category": "Unity Editor",
+    "difficulty": "Easy",
+    "type": "multiple-choice",
+    "question": "Phím W mặc định kích hoạt công cụ nào?",
+    "options": [
+      "Rotate",
+      "Move",
+      "Scale",
+      "Rect"
+    ],
+    "answer": 1,
+    "explanation": "W là Move Tool."
+  },
+  {
+    "id": 7,
+    "category": "Unity Editor",
+    "difficulty": "Easy",
+    "type": "multiple-choice",
+    "question": "Khi đang Play, thay đổi Position của GameObject rồi Stop thì?",
+    "options": [
+      "Được lưu",
+      "Quay về giá trị trước khi Play",
+      "Unity hỏi lưu",
+      "Game lỗi"
+    ],
+    "answer": 1,
+    "explanation": "Thay đổi trong Play Mode không được lưu."
+  },
+  {
+    "id": 8,
+    "category": "Unity Editor",
+    "difficulty": "Easy",
+    "type": "multiple-choice",
+    "question": "Scene View dùng để?",
+    "options": [
+      "Thiết kế và chỉnh sửa Scene",
+      "Viết Script",
+      "Xem Console",
+      "Quản lý Asset"
+    ],
+    "answer": 0,
+    "explanation": "Scene View dùng để xây dựng Scene."
+  },
+  {
+    "id": 9,
+    "category": "Unity Editor",
+    "difficulty": "Easy",
+    "type": "multiple-choice",
+    "question": "Game View dùng để?",
+    "options": [
+      "Xem game khi chạy",
+      "Quản lý Prefab",
+      "Import Asset",
+      "Debug Script"
+    ],
+    "answer": 0,
+    "explanation": "Game View hiển thị hình ảnh người chơi nhìn thấy."
+  },
+  {
+    "id": 10,
+    "category": "Unity Editor",
+    "difficulty": "Medium",
+    "type": "multiple-choice",
+    "question": "Nút Pause trong Play Mode có tác dụng gì?",
+    "options": [
+      "Dừng và cho phép kiểm tra trạng thái hiện tại",
+      "Thoát Unity",
+      "Build game",
+      "Lưu Scene"
+    ],
+    "answer": 0,
+    "explanation": "Pause giúp kiểm tra trạng thái game."
+  },
+  {
+    "id": 11,
+    "category": "Sprite",
+    "difficulty": "Easy",
+    "type": "multiple-choice",
+    "question": "Sprite là gì?",
+    "options": [
+      "Âm thanh",
+      "Hình ảnh 2D",
+      "Script",
+      "Prefab"
+    ],
+    "answer": 1,
+    "explanation": "Sprite là hình ảnh 2D."
+  },
+  {
+    "id": 12,
+    "category": "Sprite",
+    "difficulty": "Easy",
+    "type": "multiple-choice",
+    "question": "Component nào hiển thị Sprite?",
+    "options": [
+      "Image",
+      "SpriteRenderer",
+      "MeshRenderer",
+      "Animator"
+    ],
+    "answer": 1,
+    "explanation": "SpriteRenderer dùng để render Sprite."
+  },
+  {
+    "id": 13,
+    "category": "Sprite",
+    "difficulty": "Medium",
+    "type": "multiple-choice",
+    "question": "Sprite Editor thường dùng để?",
+    "options": [
+      "Cắt Sprite Sheet",
+      "Viết Script",
+      "Tạo UI",
+      "Build"
+    ],
+    "answer": 0,
+    "explanation": "Sprite Editor hỗ trợ Slice."
+  },
+  {
+    "id": 14,
+    "category": "Sprite",
+    "difficulty": "Medium",
+    "type": "multiple-choice",
+    "question": "Sorting Layer dùng để?",
+    "options": [
+      "Quyết định thứ tự hiển thị",
+      "Tạo va chạm",
+      "Điều khiển Camera",
+      "Tăng FPS"
+    ],
+    "answer": 0,
+    "explanation": "Sorting Layer điều khiển render."
+  },
+  {
+    "id": 15,
+    "category": "Sprite",
+    "difficulty": "Medium",
+    "type": "multiple-choice",
+    "question": "Pixels Per Unit ảnh hưởng đến?",
+    "options": [
+      "Kích thước Sprite trong thế giới",
+      "Âm lượng",
+      "FPS",
+      "Animation"
+    ],
+    "answer": 0,
+    "explanation": "PPU quyết định tỷ lệ Sprite."
+  },
+  {
+    "id": 16,
+    "category": "Prefab",
+    "difficulty": "Easy",
+    "type": "multiple-choice",
+    "question": "Prefab là gì?",
+    "options": [
+      "Template của GameObject",
+      "Một Scene",
+      "Một Script",
+      "Một Texture"
+    ],
+    "answer": 0,
+    "explanation": "Prefab giúp tái sử dụng GameObject."
+  },
+  {
+    "id": 17,
+    "category": "Prefab",
+    "difficulty": "Easy",
+    "type": "multiple-choice",
+    "question": "Để tạo Prefab từ GameObject, bạn làm gì?",
+    "options": [
+      "Kéo từ Hierarchy vào Project",
+      "Nhấn Ctrl+P",
+      "Build Project",
+      "Đổi đuôi file"
+    ],
+    "answer": 0,
+    "explanation": "Kéo thả vào Project."
+  },
+  {
+    "id": 18,
+    "category": "Prefab",
+    "difficulty": "Medium",
+    "type": "multiple-choice",
+    "question": "Instantiate() dùng để?",
+    "options": [
+      "Tạo bản sao Prefab/GameObject",
+      "Xóa Object",
+      "Đổi Scene",
+      "Phát âm thanh"
+    ],
+    "answer": 0,
+    "explanation": "Instantiate tạo đối tượng mới."
+  },
+  {
+    "id": 19,
+    "category": "Prefab",
+    "difficulty": "Medium",
+    "type": "multiple-choice",
+    "question": "Ưu điểm lớn nhất của Prefab là?",
+    "options": [
+      "Sửa Prefab gốc cập nhật các instance",
+      "Tăng FPS",
+      "Giảm RAM",
+      "Tự động viết code"
+    ],
+    "answer": 0,
+    "explanation": "Prefab giúp quản lý nhiều đối tượng."
+  },
+  {
+    "id": 20,
+    "category": "Prefab",
+    "difficulty": "Medium",
+    "type": "multiple-choice",
+    "question": "Unpack Prefab dùng để?",
+    "options": [
+      "Tách instance khỏi Prefab gốc",
+      "Xóa Prefab",
+      "Nén Prefab",
+      "Đổi tên Prefab"
+    ],
+    "answer": 0,
+    "explanation": "Sau Unpack, GameObject độc lập."
+  }
+]

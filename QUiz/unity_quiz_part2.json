@@ -1,0 +1,302 @@
+[
+  {
+    "id": 21,
+    "category": "Physics2D",
+    "difficulty": "Easy",
+    "type": "multiple-choice",
+    "question": "Component nào giúp GameObject chịu tác động của hệ thống vật lý 2D?",
+    "options": [
+      "BoxCollider2D",
+      "Rigidbody2D",
+      "SpriteRenderer",
+      "Animator"
+    ],
+    "answer": 1,
+    "explanation": "Rigidbody2D tham gia mô phỏng vật lý."
+  },
+  {
+    "id": 22,
+    "category": "Physics2D",
+    "difficulty": "Medium",
+    "type": "multiple-choice",
+    "question": "Body Type nào KHÔNG bị trọng lực tác động?",
+    "options": [
+      "Dynamic",
+      "Static",
+      "Kinematic",
+      "Static và Kinematic"
+    ],
+    "answer": 3,
+    "explanation": "Static và Kinematic không chịu gravity theo mặc định."
+  },
+  {
+    "id": 23,
+    "category": "Physics2D",
+    "difficulty": "Easy",
+    "type": "multiple-choice",
+    "question": "Thuộc tính Gravity Scale dùng để làm gì?",
+    "options": [
+      "Đổi hướng trọng lực",
+      "Điều chỉnh mức ảnh hưởng của trọng lực",
+      "Tăng FPS",
+      "Đổi khối lượng"
+    ],
+    "answer": 1,
+    "explanation": "Gravity Scale nhân với trọng lực."
+  },
+  {
+    "id": 24,
+    "category": "Physics2D",
+    "difficulty": "Easy",
+    "type": "multiple-choice",
+    "question": "Nếu Gravity Scale = 0 thì điều gì xảy ra?",
+    "options": [
+      "Rơi nhanh hơn",
+      "Không chịu trọng lực",
+      "Bị xóa",
+      "Không đổi"
+    ],
+    "answer": 1,
+    "explanation": "Object không bị gravity kéo."
+  },
+  {
+    "id": 25,
+    "category": "Physics2D",
+    "difficulty": "Easy",
+    "type": "multiple-choice",
+    "question": "Component nào tạo vùng va chạm hình hộp?",
+    "options": [
+      "CircleCollider2D",
+      "PolygonCollider2D",
+      "BoxCollider2D",
+      "EdgeCollider2D"
+    ],
+    "answer": 2,
+    "explanation": "BoxCollider2D tạo collider hình chữ nhật."
+  },
+  {
+    "id": 26,
+    "category": "Physics2D",
+    "difficulty": "Easy",
+    "type": "multiple-choice",
+    "question": "CircleCollider2D phù hợp nhất với đối tượng nào?",
+    "options": [
+      "Nhân vật hình người",
+      "Quả bóng",
+      "Mặt đất",
+      "Cầu thang"
+    ],
+    "answer": 1,
+    "explanation": "Collider hình tròn phù hợp vật thể tròn."
+  },
+  {
+    "id": 27,
+    "category": "Physics2D",
+    "difficulty": "Easy",
+    "type": "multiple-choice",
+    "question": "Để nhận sự kiện Trigger, Collider cần bật tùy chọn nào?",
+    "options": [
+      "Is Trigger",
+      "Auto Sync",
+      "Used by Effector",
+      "Simulated"
+    ],
+    "answer": 0,
+    "explanation": "Bật Is Trigger để nhận Trigger event."
+  },
+  {
+    "id": 28,
+    "category": "Physics2D",
+    "difficulty": "Easy",
+    "type": "multiple-choice",
+    "question": "Hàm nào được gọi khi hai Collider2D bắt đầu va chạm vật lý?",
+    "options": [
+      "OnTriggerEnter2D",
+      "OnCollisionEnter2D",
+      "OnCollisionStay2D",
+      "Start"
+    ],
+    "answer": 1,
+    "explanation": "OnCollisionEnter2D xử lý va chạm đầu tiên."
+  },
+  {
+    "id": 29,
+    "category": "Physics2D",
+    "difficulty": "Easy",
+    "type": "multiple-choice",
+    "question": "Hàm nào được gọi khi đi vào vùng Trigger?",
+    "options": [
+      "OnCollisionEnter2D",
+      "OnTriggerEnter2D",
+      "Update",
+      "Awake"
+    ],
+    "answer": 1,
+    "explanation": "Trigger dùng OnTriggerEnter2D."
+  },
+  {
+    "id": 30,
+    "category": "Physics2D",
+    "difficulty": "Medium",
+    "type": "multiple-choice",
+    "question": "Muốn di chuyển Rigidbody2D bằng lực, nên dùng?",
+    "options": [
+      "transform.position",
+      "AddForce()",
+      "transform.Rotate()",
+      "Destroy()"
+    ],
+    "answer": 1,
+    "explanation": "AddForce tạo chuyển động theo vật lý."
+  },
+  {
+    "id": 31,
+    "category": "Physics2D",
+    "difficulty": "Easy",
+    "type": "multiple-choice",
+    "question": "Biến velocity của Rigidbody2D biểu diễn?",
+    "options": [
+      "Khối lượng",
+      "Gia tốc",
+      "Vận tốc",
+      "Lực"
+    ],
+    "answer": 2,
+    "explanation": "velocity lưu vận tốc hiện tại."
+  },
+  {
+    "id": 32,
+    "category": "Physics2D",
+    "difficulty": "Easy",
+    "type": "multiple-choice",
+    "question": "Đặt velocity.y > 0 thường dùng để?",
+    "options": [
+      "Cho nhân vật nhảy",
+      "Xóa object",
+      "Đổi Scene",
+      "Đổi Sprite"
+    ],
+    "answer": 0,
+    "explanation": "Thiết lập vận tốc theo trục Y để nhảy."
+  },
+  {
+    "id": 33,
+    "category": "Physics2D",
+    "difficulty": "Easy",
+    "type": "multiple-choice",
+    "question": "Freeze Rotation Z thường dùng để?",
+    "options": [
+      "Ngăn nhân vật bị xoay khi va chạm",
+      "Tăng tốc độ",
+      "Ẩn Sprite",
+      "Tắt Collider"
+    ],
+    "answer": 0,
+    "explanation": "Platform thường khóa xoay Z."
+  },
+  {
+    "id": 34,
+    "category": "Physics2D",
+    "difficulty": "Easy",
+    "type": "multiple-choice",
+    "question": "Physics Material 2D có thể điều chỉnh?",
+    "options": [
+      "Ma sát và độ nảy",
+      "Animation",
+      "Camera",
+      "UI"
+    ],
+    "answer": 0,
+    "explanation": "Material điều chỉnh Friction và Bounciness."
+  },
+  {
+    "id": 35,
+    "category": "Physics2D",
+    "difficulty": "Easy",
+    "type": "multiple-choice",
+    "question": "Friction cao sẽ khiến vật thể?",
+    "options": [
+      "Trượt nhiều hơn",
+      "Ít trượt hơn",
+      "Bay lên",
+      "Xuyên tường"
+    ],
+    "answer": 1,
+    "explanation": "Ma sát cao giảm trượt."
+  },
+  {
+    "id": 36,
+    "category": "Physics2D",
+    "difficulty": "Easy",
+    "type": "multiple-choice",
+    "question": "Bounciness càng lớn thì?",
+    "options": [
+      "Ít nảy",
+      "Nảy mạnh hơn",
+      "Nặng hơn",
+      "Nhanh hơn"
+    ],
+    "answer": 1,
+    "explanation": "Độ nảy tăng."
+  },
+  {
+    "id": 37,
+    "category": "Physics2D",
+    "difficulty": "Medium",
+    "type": "multiple-choice",
+    "question": "Để kiểm tra nhân vật đang đứng trên mặt đất, cách phổ biến là?",
+    "options": [
+      "Raycast xuống dưới",
+      "Đổi Sorting Layer",
+      "Đổi Camera",
+      "Destroy Collider"
+    ],
+    "answer": 0,
+    "explanation": "Ground Check bằng Raycast rất phổ biến."
+  },
+  {
+    "id": 38,
+    "category": "Physics2D",
+    "difficulty": "Medium",
+    "type": "multiple-choice",
+    "question": "Layer Collision Matrix dùng để?",
+    "options": [
+      "Quy định layer nào được va chạm với nhau",
+      "Đổi màu Layer",
+      "Quản lý Sprite",
+      "Quản lý Scene"
+    ],
+    "answer": 0,
+    "explanation": "Thiết lập va chạm giữa các layer."
+  },
+  {
+    "id": 39,
+    "category": "Physics2D",
+    "difficulty": "Hard",
+    "type": "multiple-choice",
+    "question": "Nếu Player đi xuyên Ground ở tốc độ cao, nên kiểm tra đầu tiên?",
+    "options": [
+      "Collision Detection",
+      "Sprite Color",
+      "Sorting Layer",
+      "Camera Size"
+    ],
+    "answer": 0,
+    "explanation": "Continuous giúp hạn chế xuyên vật."
+  },
+  {
+    "id": 40,
+    "category": "Physics2D",
+    "difficulty": "Easy",
+    "type": "multiple-choice",
+    "question": "Code xử lý vật lý nên đặt ở hàm nào?",
+    "options": [
+      "Update()",
+      "LateUpdate()",
+      "FixedUpdate()",
+      "OnGUI()"
+    ],
+    "answer": 2,
+    "explanation": "FixedUpdate chạy theo chu kỳ vật lý."
+  }
+]

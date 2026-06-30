@@ -1,0 +1,302 @@
+[
+  {
+    "id": 41,
+    "category": "Animation",
+    "difficulty": "Easy",
+    "type": "multiple-choice",
+    "question": "Animator Controller có nhiệm vụ chính là gì?",
+    "options": [
+      "Quản lý các Animation State và Transition",
+      "Vẽ Sprite",
+      "Điều khiển Camera",
+      "Quản lý Scene"
+    ],
+    "answer": 0,
+    "explanation": "Animator Controller điều khiển luồng animation."
+  },
+  {
+    "id": 42,
+    "category": "Animation",
+    "difficulty": "Easy",
+    "type": "multiple-choice",
+    "question": "Animation Clip là gì?",
+    "options": [
+      "Một đoạn hoạt ảnh",
+      "Một Scene",
+      "Một Prefab",
+      "Một Component vật lý"
+    ],
+    "answer": 0,
+    "explanation": "Animation Clip lưu dữ liệu hoạt ảnh."
+  },
+  {
+    "id": 43,
+    "category": "Animation",
+    "difficulty": "Easy",
+    "type": "multiple-choice",
+    "question": "Parameter kiểu Bool thường phù hợp để điều khiển trạng thái nào?",
+    "options": [
+      "Idle/Run",
+      "Attack một lần",
+      "Sát thương",
+      "Điểm số"
+    ],
+    "answer": 0,
+    "explanation": "Bool phù hợp với trạng thái bật/tắt."
+  },
+  {
+    "id": 44,
+    "category": "Animation",
+    "difficulty": "Easy",
+    "type": "multiple-choice",
+    "question": "Parameter kiểu Trigger thích hợp nhất cho trường hợp nào?",
+    "options": [
+      "Tấn công hoặc chết",
+      "Máu hiện tại",
+      "Tốc độ chạy",
+      "Tên nhân vật"
+    ],
+    "answer": 0,
+    "explanation": "Trigger chỉ kích hoạt một lần."
+  },
+  {
+    "id": 45,
+    "category": "Animation",
+    "difficulty": "Easy",
+    "type": "multiple-choice",
+    "question": "Parameter kiểu Float thường dùng để truyền giá trị gì?",
+    "options": [
+      "Tốc độ di chuyển",
+      "Tên Scene",
+      "Số mạng",
+      "Tên Prefab"
+    ],
+    "answer": 0,
+    "explanation": "Float thường điều khiển Blend Tree."
+  },
+  {
+    "id": 46,
+    "category": "Animation",
+    "difficulty": "Easy",
+    "type": "multiple-choice",
+    "question": "Transition trong Animator dùng để làm gì?",
+    "options": [
+      "Chuyển giữa các Animation State",
+      "Tạo Prefab",
+      "Thêm Collider",
+      "Load Scene"
+    ],
+    "answer": 0,
+    "explanation": "Transition kết nối các state."
+  },
+  {
+    "id": 47,
+    "category": "Animation",
+    "difficulty": "Easy",
+    "type": "multiple-choice",
+    "question": "Điều kiện (Condition) trong Transition có tác dụng gì?",
+    "options": [
+      "Quyết định khi nào chuyển animation",
+      "Tăng FPS",
+      "Đổi Camera",
+      "Xóa Animation"
+    ],
+    "answer": 0,
+    "explanation": "Condition quyết định việc chuyển state."
+  },
+  {
+    "id": 48,
+    "category": "Animation",
+    "difficulty": "Easy",
+    "type": "multiple-choice",
+    "question": "Nếu Has Exit Time được bật, Transition sẽ?",
+    "options": [
+      "Đợi animation hiện tại chạy gần xong rồi mới chuyển",
+      "Chuyển ngay lập tức",
+      "Không bao giờ chuyển",
+      "Dừng game"
+    ],
+    "answer": 0,
+    "explanation": "Has Exit Time chờ animation hoàn thành."
+  },
+  {
+    "id": 49,
+    "category": "Animation",
+    "difficulty": "Medium",
+    "type": "multiple-choice",
+    "question": "Blend Tree giúp giải quyết vấn đề gì?",
+    "options": [
+      "Chuyển đổi mượt giữa nhiều animation",
+      "Giảm kích thước ảnh",
+      "Phát âm thanh",
+      "Tăng Collider"
+    ],
+    "answer": 0,
+    "explanation": "Blend Tree nội suy animation theo tham số."
+  },
+  {
+    "id": 50,
+    "category": "Animation",
+    "difficulty": "Easy",
+    "type": "multiple-choice",
+    "question": "Animation Event dùng để?",
+    "options": [
+      "Gọi hàm tại một thời điểm trong animation",
+      "Đổi Scene",
+      "Đổi Camera",
+      "Spawn Prefab"
+    ],
+    "answer": 0,
+    "explanation": "Animation Event gọi hàm C#."
+  },
+  {
+    "id": 51,
+    "category": "Animation",
+    "difficulty": "Easy",
+    "type": "multiple-choice",
+    "question": "Animator Component cần gắn ở đâu?",
+    "options": [
+      "GameObject cần phát animation",
+      "Main Camera",
+      "Canvas",
+      "Project"
+    ],
+    "answer": 0,
+    "explanation": "Animator gắn lên đối tượng cần animate."
+  },
+  {
+    "id": 52,
+    "category": "Animation",
+    "difficulty": "Medium",
+    "type": "multiple-choice",
+    "question": "Muốn thay đổi animation bằng code thường dùng phương thức nào?",
+    "options": [
+      "SetBool()/SetTrigger()",
+      "Destroy()",
+      "Instantiate()",
+      "Translate()"
+    ],
+    "answer": 0,
+    "explanation": "Animator nhận parameter từ code."
+  },
+  {
+    "id": 53,
+    "category": "Animation",
+    "difficulty": "Easy",
+    "type": "multiple-choice",
+    "question": "Nếu quên gán Animator Controller cho Animator thì?",
+    "options": [
+      "Animation sẽ không chạy",
+      "Unity bị lỗi",
+      "Sprite biến mất",
+      "Game không Build"
+    ],
+    "answer": 0,
+    "explanation": "Animator không có controller sẽ không phát animation."
+  },
+  {
+    "id": 54,
+    "category": "Animation",
+    "difficulty": "Easy",
+    "type": "multiple-choice",
+    "question": "Animation Loop Time dùng để?",
+    "options": [
+      "Cho phép animation lặp lại",
+      "Tăng tốc animation",
+      "Đổi màu sprite",
+      "Khóa FPS"
+    ],
+    "answer": 0,
+    "explanation": "Loop Time giúp animation chạy lặp."
+  },
+  {
+    "id": 55,
+    "category": "Animation",
+    "difficulty": "Easy",
+    "type": "multiple-choice",
+    "question": "Animation Idle thường được thiết lập như thế nào?",
+    "options": [
+      "Loop liên tục",
+      "Chỉ chạy một lần",
+      "Không phát",
+      "Tự xóa"
+    ],
+    "answer": 0,
+    "explanation": "Idle luôn lặp."
+  },
+  {
+    "id": 56,
+    "category": "Animation",
+    "difficulty": "Easy",
+    "type": "multiple-choice",
+    "question": "Animation Attack thường nên cấu hình?",
+    "options": [
+      "Không Loop",
+      "Loop vô hạn",
+      "Ẩn Sprite",
+      "Không cần Transition"
+    ],
+    "answer": 0,
+    "explanation": "Attack thường chỉ phát một lần."
+  },
+  {
+    "id": 57,
+    "category": "Animation",
+    "difficulty": "Hard",
+    "type": "multiple-choice",
+    "question": "Nếu Run animation không chuyển sang Jump khi nhảy, nguyên nhân hợp lý nhất là?",
+    "options": [
+      "Transition hoặc Condition chưa đúng",
+      "Sprite quá lớn",
+      "Camera quá xa",
+      "Sorting Layer sai"
+    ],
+    "answer": 0,
+    "explanation": "Kiểm tra điều kiện chuyển state."
+  },
+  {
+    "id": 58,
+    "category": "Animation",
+    "difficulty": "Hard",
+    "type": "multiple-choice",
+    "question": "Khi nhân vật chạy nhưng animation vẫn đứng yên, nên kiểm tra đầu tiên?",
+    "options": [
+      "Animator Parameter có được cập nhật không",
+      "Độ phân giải màn hình",
+      "Ánh sáng",
+      "Package Manager"
+    ],
+    "answer": 0,
+    "explanation": "Parameter sai là lỗi phổ biến."
+  },
+  {
+    "id": 59,
+    "category": "Animation",
+    "difficulty": "Medium",
+    "type": "multiple-choice",
+    "question": "Muốn nhiều object dùng chung cùng một bộ animation, nên sử dụng?",
+    "options": [
+      "Một Animator Controller dùng chung",
+      "Mỗi object một Project",
+      "Mỗi object một Scene",
+      "Mỗi object một Camera"
+    ],
+    "answer": 0,
+    "explanation": "Có thể tái sử dụng Animator Controller."
+  },
+  {
+    "id": 60,
+    "category": "Animation",
+    "difficulty": "Easy",
+    "type": "multiple-choice",
+    "question": "Trong game Platform, trạng thái nào thường KHÔNG nằm trong Animator?",
+    "options": [
+      "Run",
+      "Jump",
+      "Idle",
+      "Project Settings"
+    ],
+    "answer": 3,
+    "explanation": "Project Settings không phải animation state."
+  }
+]

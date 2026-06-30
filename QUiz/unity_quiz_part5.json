@@ -1,0 +1,302 @@
+[
+  {
+    "id": 81,
+    "category": "Scene",
+    "difficulty": "Easy",
+    "type": "multiple-choice",
+    "question": "Để chuyển sang một Scene khác bằng code, cần sử dụng lớp nào?",
+    "options": [
+      "Application",
+      "SceneManager",
+      "SceneLoader",
+      "GameManager"
+    ],
+    "answer": 1,
+    "explanation": "SceneManager quản lý việc tải Scene."
+  },
+  {
+    "id": 82,
+    "category": "Scene",
+    "difficulty": "Medium",
+    "type": "multiple-choice",
+    "question": "Trước khi gọi SceneManager.LoadScene(), cần thêm namespace nào?",
+    "options": [
+      "UnityEngine.UI",
+      "UnityEngine.SceneManagement",
+      "System.IO",
+      "UnityEngine.InputSystem"
+    ],
+    "answer": 1,
+    "explanation": "Namespace chứa SceneManager."
+  },
+  {
+    "id": 83,
+    "category": "Scene",
+    "difficulty": "Easy",
+    "type": "multiple-choice",
+    "question": "Scene nào sẽ được mở đầu tiên khi Build game?",
+    "options": [
+      "Scene đầu tiên trong Build Settings",
+      "Scene đang mở gần nhất",
+      "Scene có Camera",
+      "Scene có Player"
+    ],
+    "answer": 0,
+    "explanation": "Build Settings quyết định thứ tự."
+  },
+  {
+    "id": 84,
+    "category": "Scene",
+    "difficulty": "Medium",
+    "type": "multiple-choice",
+    "question": "DontDestroyOnLoad() thường dùng với đối tượng nào?",
+    "options": [
+      "GameManager",
+      "Ground",
+      "Tilemap",
+      "Sprite"
+    ],
+    "answer": 0,
+    "explanation": "Giữ đối tượng tồn tại giữa các Scene."
+  },
+  {
+    "id": 85,
+    "category": "Camera",
+    "difficulty": "Easy",
+    "type": "multiple-choice",
+    "question": "Game Platform 2D thường sử dụng kiểu Camera nào?",
+    "options": [
+      "Perspective",
+      "Orthographic",
+      "Panoramic",
+      "Physical"
+    ],
+    "answer": 1,
+    "explanation": "Orthographic không tạo phối cảnh."
+  },
+  {
+    "id": 86,
+    "category": "Camera",
+    "difficulty": "Easy",
+    "type": "multiple-choice",
+    "question": "Thuộc tính Size của Orthographic Camera ảnh hưởng trực tiếp đến?",
+    "options": [
+      "Vùng nhìn thấy",
+      "Âm lượng",
+      "FPS",
+      "Trọng lực"
+    ],
+    "answer": 0,
+    "explanation": "Size quyết định phạm vi quan sát."
+  },
+  {
+    "id": 87,
+    "category": "Camera",
+    "difficulty": "Medium",
+    "type": "multiple-choice",
+    "question": "Đâu là lợi ích lớn của Cinemachine?",
+    "options": [
+      "Theo dõi Camera mượt mà",
+      "Tăng tốc biên dịch",
+      "Nén Sprite",
+      "Tạo Collider"
+    ],
+    "answer": 0,
+    "explanation": "Cinemachine hỗ trợ camera thông minh."
+  },
+  {
+    "id": 88,
+    "category": "Camera",
+    "difficulty": "Hard",
+    "type": "multiple-choice",
+    "question": "Nếu Main Camera không có tag 'MainCamera' thì điều gì có thể xảy ra?",
+    "options": [
+      "Camera.main trả về null",
+      "Sprite biến mất",
+      "Animation dừng",
+      "Không Build được"
+    ],
+    "answer": 0,
+    "explanation": "Camera.main tìm theo tag."
+  },
+  {
+    "id": 89,
+    "category": "Camera",
+    "difficulty": "Easy",
+    "type": "multiple-choice",
+    "question": "Để Camera luôn theo Player, thành phần nào thường được gán làm Target?",
+    "options": [
+      "Player Transform",
+      "Canvas",
+      "Tilemap",
+      "EventSystem"
+    ],
+    "answer": 0,
+    "explanation": "Target là Transform của Player."
+  },
+  {
+    "id": 90,
+    "category": "Camera",
+    "difficulty": "Medium",
+    "type": "multiple-choice",
+    "question": "Pixel Perfect Camera giúp mục đích gì?",
+    "options": [
+      "Hiển thị pixel sắc nét",
+      "Tăng âm lượng",
+      "Tăng trọng lực",
+      "Giảm RAM"
+    ],
+    "answer": 0,
+    "explanation": "Phù hợp game pixel art."
+  },
+  {
+    "id": 91,
+    "category": "UI",
+    "difficulty": "Easy",
+    "type": "multiple-choice",
+    "question": "Thành phần gốc của hầu hết giao diện Unity là gì?",
+    "options": [
+      "Canvas",
+      "Camera",
+      "Panel",
+      "SpriteRenderer"
+    ],
+    "answer": 0,
+    "explanation": "UI được đặt trong Canvas."
+  },
+  {
+    "id": 92,
+    "category": "UI",
+    "difficulty": "Easy",
+    "type": "multiple-choice",
+    "question": "Component nào hiển thị hình ảnh trong UI?",
+    "options": [
+      "Image",
+      "SpriteRenderer",
+      "MeshRenderer",
+      "RawCollider"
+    ],
+    "answer": 0,
+    "explanation": "Image dùng cho UI."
+  },
+  {
+    "id": 93,
+    "category": "UI",
+    "difficulty": "Medium",
+    "type": "multiple-choice",
+    "question": "Để hiển thị văn bản hiện đại trong Unity nên dùng?",
+    "options": [
+      "TextMeshProUGUI",
+      "Legacy Text",
+      "Sprite",
+      "Label2D"
+    ],
+    "answer": 0,
+    "explanation": "TMP là lựa chọn khuyến nghị."
+  },
+  {
+    "id": 94,
+    "category": "UI",
+    "difficulty": "Easy",
+    "type": "multiple-choice",
+    "question": "Thanh máu của nhân vật thường sử dụng Component nào?",
+    "options": [
+      "Slider",
+      "Animator",
+      "Console",
+      "Camera"
+    ],
+    "answer": 0,
+    "explanation": "Slider phù hợp biểu diễn giá trị."
+  },
+  {
+    "id": 95,
+    "category": "UI",
+    "difficulty": "Easy",
+    "type": "multiple-choice",
+    "question": "Button có sự kiện nào được gọi khi người dùng nhấn?",
+    "options": [
+      "OnClick",
+      "OnTrigger",
+      "OnPressedUpdate",
+      "OnTouchStay"
+    ],
+    "answer": 0,
+    "explanation": "OnClick là sự kiện phổ biến."
+  },
+  {
+    "id": 96,
+    "category": "Debug",
+    "difficulty": "Easy",
+    "type": "multiple-choice",
+    "question": "Công cụ nào giúp quan sát giá trị biến nhanh khi chạy game?",
+    "options": [
+      "Inspector",
+      "Debug.Log",
+      "Package Manager",
+      "Profiler"
+    ],
+    "answer": 1,
+    "explanation": "Debug.Log in giá trị ra Console."
+  },
+  {
+    "id": 97,
+    "category": "Debug",
+    "difficulty": "Easy",
+    "type": "multiple-choice",
+    "question": "Nếu Console xuất hiện quá nhiều log không cần thiết, điều gì có thể xảy ra?",
+    "options": [
+      "Khó tìm lỗi thật",
+      "Tăng chất lượng đồ họa",
+      "Animation nhanh hơn",
+      "Camera rung"
+    ],
+    "answer": 0,
+    "explanation": "Log dư gây khó debug."
+  },
+  {
+    "id": 98,
+    "category": "Best Practice",
+    "difficulty": "Medium",
+    "type": "multiple-choice",
+    "question": "Khi cần bật/tắt tạm thời một GameObject, nên ưu tiên dùng?",
+    "options": [
+      "SetActive(true/false)",
+      "Destroy()",
+      "Instantiate()",
+      "LoadScene()"
+    ],
+    "answer": 0,
+    "explanation": "SetActive giữ object để tái sử dụng."
+  },
+  {
+    "id": 99,
+    "category": "Best Practice",
+    "difficulty": "Medium",
+    "type": "multiple-choice",
+    "question": "Biến tham chiếu tới Player nên được lưu ở đâu nếu dùng nhiều lần?",
+    "options": [
+      "Lưu vào biến và tái sử dụng",
+      "GameObject.Find mỗi frame",
+      "Tạo mới liên tục",
+      "Không cần lưu"
+    ],
+    "answer": 0,
+    "explanation": "Cache tham chiếu giúp tối ưu."
+  },
+  {
+    "id": 100,
+    "category": "Best Practice",
+    "difficulty": "Easy",
+    "type": "multiple-choice",
+    "question": "Thói quen nào giúp code Unity dễ bảo trì hơn?",
+    "options": [
+      "Đặt tên biến và GameObject rõ ràng",
+      "Viết mọi logic trong một script",
+      "Dùng biến public cho tất cả",
+      "Đặt tên ngẫu nhiên"
+    ],
+    "answer": 0,
+    "explanation": "Tên rõ ràng giúp dễ đọc và bảo trì."
+  }
+]
