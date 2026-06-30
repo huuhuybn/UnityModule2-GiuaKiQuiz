@@ -183,6 +183,15 @@
             transform: none;
         }
 
+        .btn-danger {
+            background: linear-gradient(135deg, #ef4444 0%, #b91c1c 100%);
+            box-shadow: 0 4px 15px rgba(239, 68, 68, 0.3);
+        }
+
+        .btn-danger:hover {
+            box-shadow: 0 8px 25px rgba(239, 68, 68, 0.4);
+        }
+
         /* Screen 2: Quiz */
         .quiz-header {
             display: flex;
@@ -497,6 +506,7 @@
             </div>
 
             <div class="quiz-footer">
+                <button id="btn-submit-early" class="btn-danger" style="margin-right: auto;">Nộp bài sớm</button>
                 <button id="btn-next" disabled>Câu tiếp theo</button>
             </div>
         </div>
@@ -548,6 +558,7 @@
         const questionTextEl = document.getElementById('question-text');
         const optionsContainerEl = document.getElementById('options-container');
         const btnNext = document.getElementById('btn-next');
+        const btnSubmitEarly = document.getElementById('btn-submit-early');
 
         const resultNameEl = document.getElementById('result-name');
         const scoreTextEl = document.getElementById('score-text');
@@ -647,6 +658,11 @@
 
         btnStart.addEventListener('click', startQuiz);
         btnNext.addEventListener('click', handleNext);
+        btnSubmitEarly.addEventListener('click', () => {
+            if (confirm("Bạn có chắc chắn muốn nộp bài sớm không? Các câu chưa làm sẽ bị tính là sai.")) {
+                finishQuiz();
+            }
+        });
 
         function startQuiz() {
             studentName = nameInput.value.trim();
