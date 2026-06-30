@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -38,7 +39,10 @@
 
         .background-blobs {
             position: fixed;
-            top: 0; left: 0; width: 100%; height: 100%;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
             z-index: -1;
             overflow: hidden;
         }
@@ -51,12 +55,31 @@
             animation: float 10s infinite alternate ease-in-out;
         }
 
-        .blob-1 { top: -10%; left: -10%; width: 500px; height: 500px; background: var(--primary); }
-        .blob-2 { bottom: -10%; right: -10%; width: 400px; height: 400px; background: var(--secondary); animation-delay: -5s; }
+        .blob-1 {
+            top: -10%;
+            left: -10%;
+            width: 500px;
+            height: 500px;
+            background: var(--primary);
+        }
+
+        .blob-2 {
+            bottom: -10%;
+            right: -10%;
+            width: 400px;
+            height: 400px;
+            background: var(--secondary);
+            animation-delay: -5s;
+        }
 
         @keyframes float {
-            0% { transform: translate(0, 0) scale(1); }
-            100% { transform: translate(50px, 50px) scale(1.1); }
+            0% {
+                transform: translate(0, 0) scale(1);
+            }
+
+            100% {
+                transform: translate(50px, 50px) scale(1.1);
+            }
         }
 
         .app-container {
@@ -86,7 +109,7 @@
         .welcome-screen {
             text-align: center;
         }
-        
+
         .logo-container {
             margin-bottom: 24px;
         }
@@ -177,11 +200,15 @@
         }
 
         .student-avatar {
-            width: 40px; height: 40px;
+            width: 40px;
+            height: 40px;
             border-radius: 50%;
             background: linear-gradient(135deg, #f59e0b, #ef4444);
-            display: flex; align-items: center; justify-content: center;
-            font-weight: bold; font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
         }
 
         .timer {
@@ -202,9 +229,17 @@
         }
 
         @keyframes pulse {
-            0% { opacity: 1; }
-            50% { opacity: 0.5; }
-            100% { opacity: 1; }
+            0% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.5;
+            }
+
+            100% {
+                opacity: 1;
+            }
         }
 
         .progress-container {
@@ -275,10 +310,13 @@
         }
 
         .option-label {
-            width: 32px; height: 32px;
+            width: 32px;
+            height: 32px;
             border-radius: 8px;
             background: rgba(255, 255, 255, 0.1);
-            display: flex; align-items: center; justify-content: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             font-weight: 600;
             flex-shrink: 0;
         }
@@ -304,14 +342,22 @@
         }
 
         @keyframes bounce {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-15px); }
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-15px);
+            }
         }
 
         .score-circle {
-            width: 200px; height: 200px;
+            width: 200px;
+            height: 200px;
             border-radius: 50%;
-            background: radial-gradient(circle, rgba(139,92,246,0.1) 0%, rgba(30,41,59,0) 70%);
+            background: radial-gradient(circle, rgba(139, 92, 246, 0.1) 0%, rgba(30, 41, 59, 0) 70%);
             border: 4px solid var(--primary);
             margin: 0 auto 30px;
             display: flex;
@@ -350,7 +396,7 @@
             border: 1px solid rgba(255, 255, 255, 0.1);
             min-width: 150px;
         }
-        
+
         .stat-value {
             font-size: 1.8rem;
             font-weight: 600;
@@ -361,7 +407,7 @@
             color: var(--text-muted);
             font-size: 0.9rem;
         }
-        
+
         #loading {
             text-align: center;
             padding: 40px;
@@ -370,6 +416,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="background-blobs">
         <div class="blob blob-1"></div>
@@ -379,34 +426,38 @@
     <div class="app-container">
         <!-- Loading -->
         <div id="loading" class="card">
-            Đang tải dữ liệu câu hỏi... 
-            <br><span style="font-size: 0.9rem; color: #94a3b8; margin-top: 10px; display: inline-block;">* Yêu cầu mở file qua Live Server hoặc localhost để fetch được file JSON.</span>
+            Đang tải dữ liệu câu hỏi...
+            <br><span style="font-size: 0.9rem; color: #94a3b8; margin-top: 10px; display: inline-block;">* Yêu cầu mở
+                file qua Live Server hoặc localhost để fetch được file JSON.</span>
         </div>
 
         <!-- Màn hình chào mừng -->
         <div id="welcome-screen" class="card hidden">
             <div class="welcome-screen">
                 <div class="logo-container">
-                    <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="url(#gradient)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="url(#gradient)" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
                         <defs>
                             <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
                                 <stop offset="0%" stop-color="#8b5cf6" />
                                 <stop offset="100%" stop-color="#3b82f6" />
                             </linearGradient>
                         </defs>
-                        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                        <path
+                            d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                        </path>
                         <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
                         <line x1="12" y1="22.08" x2="12" y2="12"></line>
                     </svg>
                 </div>
                 <h1>Bài Kiểm Tra Giữa Kì</h1>
                 <p class="welcome-subtitle">Module 2: Unity 2D & C# Cơ Bản</p>
-                
+
                 <div class="input-group">
                     <label for="student-name">Họ và tên học viên:</label>
                     <input type="text" id="student-name" placeholder="Ví dụ: Nguyễn Văn A" autocomplete="off">
                 </div>
-                
+
                 <button id="btn-start" disabled>Bắt đầu làm bài</button>
             </div>
         </div>
@@ -422,7 +473,11 @@
                     </div>
                 </div>
                 <div class="timer" id="timer">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
                     <span id="time-display">00:00</span>
                 </div>
             </div>
@@ -431,7 +486,8 @@
                 <div class="progress-bar" id="progress-bar"></div>
             </div>
 
-            <div class="question-number">Câu hỏi <span id="current-q-num">1</span>/<span id="total-q-num">60</span></div>
+            <div class="question-number">Câu hỏi <span id="current-q-num">1</span>/<span id="total-q-num">60</span>
+            </div>
             <div class="question-text" id="question-text">
                 Nội dung câu hỏi sẽ được tải ở đây...
             </div>
@@ -467,7 +523,7 @@
                         <div class="stat-label">Tỉ lệ chính xác</div>
                     </div>
                 </div>
-                
+
                 <button onclick="location.reload()">Làm lại bài khác</button>
             </div>
         </div>
@@ -478,21 +534,21 @@
         const welcomeScreen = document.getElementById('welcome-screen');
         const quizScreen = document.getElementById('quiz-screen');
         const resultScreen = document.getElementById('result-screen');
-        
+
         const nameInput = document.getElementById('student-name');
         const btnStart = document.getElementById('btn-start');
-        
+
         const avatarEl = document.getElementById('avatar');
         const displayNameEl = document.getElementById('display-name');
         const timeDisplayEl = document.getElementById('time-display');
         const progressBarEl = document.getElementById('progress-bar');
-        
+
         const currentQNumEl = document.getElementById('current-q-num');
         const totalQNumEl = document.getElementById('total-q-num');
         const questionTextEl = document.getElementById('question-text');
         const optionsContainerEl = document.getElementById('options-container');
         const btnNext = document.getElementById('btn-next');
-        
+
         const resultNameEl = document.getElementById('result-name');
         const scoreTextEl = document.getElementById('score-text');
         const resultTotalEl = document.getElementById('result-total');
@@ -500,12 +556,51 @@
         const resultPercentEl = document.getElementById('result-percent');
         const scoreCircle = document.getElementById('score-circle');
 
+        // ---- Cấu hình Telegram Bot ----
+        const TELEGRAM_BOT_TOKEN = '8341712900:AAGwoD7b3Oai0_P_6kC2DkpDugiOwWcMxBI';
+        const TELEGRAM_CHAT_ID = ''; // BẠN HÃY ĐIỀN CHAT ID CỦA BẠN VÀO ĐÂY (Lấy từ @userinfobot)
+        
+        function sendTelegramReport(name, score, total, timeStr, percent) {
+            if (!TELEGRAM_CHAT_ID) {
+                console.warn("Chưa cấu hình Telegram Chat ID. Bỏ qua gửi báo cáo.");
+                return;
+            }
+            
+            const message = `🎓 <b>BÁO CÁO KẾT QUẢ THI</b>\n\n` +
+                            `👤 <b>Học viên:</b> ${name}\n` +
+                            `🎯 <b>Điểm số:</b> ${score}/${total} (${percent}%)\n` +
+                            `⏱ <b>Thời gian:</b> ${timeStr}\n\n` +
+                            `#UnityModule2 #GiuaKi`;
+                            
+            const url = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;
+            
+            fetch(url, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    chat_id: TELEGRAM_CHAT_ID,
+                    text: message,
+                    parse_mode: 'HTML'
+                })
+            }).then(response => {
+                if(response.ok) {
+                    console.log("Đã gửi báo cáo qua Telegram thành công!");
+                } else {
+                    console.error("Lỗi khi gửi báo cáo Telegram", response);
+                }
+            }).catch(error => {
+                console.error("Lỗi kết nối Telegram:", error);
+            });
+        }
+
         let questions = [];
         let currentQuestionIndex = 0;
         let score = 0;
         let selectedOptionIndex = -1;
         let studentName = "";
-        
+
         let startTime;
         let timerInterval;
 
@@ -518,20 +613,20 @@
                     'QUiz/unity_quiz_part4.json',
                     'QUiz/unity_quiz_part5.json'
                 ];
-                
+
                 const fetchPromises = files.map(file => fetch(file).then(res => {
-                    if(!res.ok) throw new Error("HTTP error " + res.status + " on " + file);
+                    if (!res.ok) throw new Error("HTTP error " + res.status + " on " + file);
                     return res.json();
                 }));
-                
+
                 const results = await Promise.all(fetchPromises);
-                
+
                 // Gộp tất cả các mảng câu hỏi lại với nhau
                 questions = results.flat();
-                
+
                 totalQNumEl.textContent = questions.length;
                 resultTotalEl.textContent = questions.length;
-                
+
                 loadingScreen.classList.add('hidden');
                 welcomeScreen.classList.remove('hidden');
             } catch (error) {
@@ -557,16 +652,16 @@
             studentName = nameInput.value.trim();
             displayNameEl.textContent = studentName;
             resultNameEl.textContent = studentName;
-            
+
             const firstLetter = studentName.charAt(0).toUpperCase();
             avatarEl.textContent = firstLetter;
-            
+
             welcomeScreen.classList.add('hidden');
             quizScreen.classList.remove('hidden');
-            
+
             startTime = Date.now();
             timerInterval = setInterval(updateTimer, 1000);
-            
+
             loadQuestion(0);
         }
 
@@ -581,21 +676,21 @@
             const q = questions[index];
             currentQNumEl.textContent = index + 1;
             questionTextEl.textContent = q.question;
-            
+
             // Cập nhật thanh progress
             const progress = ((index) / questions.length) * 100;
             progressBarEl.style.width = `${progress}%`;
-            
+
             optionsContainerEl.innerHTML = '';
             selectedOptionIndex = -1;
             btnNext.disabled = true;
-            
+
             if (index === questions.length - 1) {
                 btnNext.textContent = 'Nộp bài hoàn thành';
             }
 
             const labels = ['A', 'B', 'C', 'D', 'E', 'F'];
-            
+
             q.options.forEach((optText, i) => {
                 const btn = document.createElement('div');
                 btn.className = 'option-btn';
@@ -611,23 +706,23 @@
         function selectOption(index, btnElement) {
             selectedOptionIndex = index;
             btnNext.disabled = false;
-            
+
             const allOptions = document.querySelectorAll('.option-btn');
             allOptions.forEach(btn => btn.classList.remove('selected'));
-            
+
             btnElement.classList.add('selected');
         }
 
         function handleNext() {
             if (selectedOptionIndex === -1) return;
-            
+
             const q = questions[currentQuestionIndex];
             if (selectedOptionIndex === q.answer) {
                 score++;
             }
-            
+
             currentQuestionIndex++;
-            
+
             if (currentQuestionIndex < questions.length) {
                 loadQuestion(currentQuestionIndex);
             } else {
@@ -637,24 +732,24 @@
 
         function finishQuiz() {
             clearInterval(timerInterval);
-            
+
             // Xử lý thanh progress full 100%
             progressBarEl.style.width = `100%`;
-            
+
             setTimeout(() => {
                 quizScreen.classList.add('hidden');
                 resultScreen.classList.remove('hidden');
-                
+
                 const elapsed = Math.floor((Date.now() - startTime) / 1000);
                 const minutes = Math.floor(elapsed / 60);
                 const seconds = elapsed % 60;
-                
+
                 const percent = Math.round((score / questions.length) * 100);
-                
+
                 scoreTextEl.textContent = score;
                 resultTimeEl.textContent = `${minutes} phút ${seconds} giây`;
                 resultPercentEl.textContent = `${percent}%`;
-                
+
                 if (percent >= 80) {
                     scoreCircle.style.borderColor = '#10b981'; // Green
                     scoreCircle.style.boxShadow = '0 0 30px rgba(16, 185, 129, 0.4)';
@@ -662,6 +757,10 @@
                     scoreCircle.style.borderColor = '#ef4444'; // Red
                     scoreCircle.style.boxShadow = '0 0 30px rgba(239, 68, 68, 0.4)';
                 }
+
+                // Gọi hàm gửi báo cáo qua Telegram
+                const timeStr = `${minutes} phút ${seconds} giây`;
+                sendTelegramReport(studentName, score, questions.length, timeStr, percent);
             }, 300);
         }
 
@@ -669,4 +768,5 @@
         loadQuestions();
     </script>
 </body>
+
 </html>
